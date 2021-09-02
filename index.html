@@ -8,32 +8,121 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="logo"><h4>Alessandro</h4></div>
-        <div class="nav-links">
-            <a href="#">About</a>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <div class="navbar__logo"><h4>Alessandro</h4></div>
+
+        <div class="navbar__links">
+            <a href="#">About Me</a>
             <a href="#">Projects</a>
             <a href="#">My CV</a>
             <a href="#">Contact Me</a>
         </div>
+
     </nav>
 
-    <header class="hero-header">
-        <h1 class="hero-title">There is beauty in <span>simplicity</span>.</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header__title">There is beauty in <em>simplicity</em>.</h1>
     </header>
 
+     <!-- FIRST SECTION -->
     <section class="first-section">
-        <h2>Hello there!<br>My name is Alessandro</h2>
-        <h4>I am a Software Engineer with a passion for clean, minimalist design.<br>
-            My philosophy? <span class="bold-letter">K</span>eep <span class="bold-letter">I</span>t <span class="bold-letter">S</span>imple <span class="bold-letter">S</span>tupid!</h4>
+
+        <h2 class="first-section__heading">Hello there!<br>My name is Alessandro</h2>
+        <h4 class="first-section__subheading">I am a Software Engineer with a passion for clean, minimalist design.<br>
+            My philosophy? 
+            <span class="first-section__subheading--bolder">K</span>eep 
+            <span class="first-section__subheading--bolder">I</span>t 
+            <span class="first-section__subheading--bolder">S</span>imple 
+            <span class="first-section__subheading--bolder">S</span>tupid!
+        </h4>
+
     </section>
 
-    <section class="projects">my projects</section>
+     <!-- PROJECTS SECTION -->
+    <section class="projects">
+        
+        <h2>Projects I've worked on</h2>
 
-    <section class="my-skills">my skills</section>
+        <div class="project-card">
+            <img src="" alt="" class="project-card__img">
+            <div class="project-card__description">
+                <h3>Project 1</h3>
+                <p>Description of project</p>
+            </div>
+            <div class="project-card__menu">
+                <ul class="project-card__links">
+                    <li>Case Study</li>
+                    <li>Source Code</li>
+                    <li>Live Demo</li>
+                </ul>
+            </div>
+        </div>
 
-    <section class="contact">get in touch</section>
+    </section>
 
-    <footer>footer</footer>
+     <!-- SKILLS SECTION -->
+    <section class="skills">
+
+        <h2>My Skills</h2>
+
+        <ul class="skills__list">
+            <li>Case Study</li>
+            <li>Source Code</li>
+            <li>Live Demo</li>
+        </ul>
+
+    </section>
+
+     <!-- CONTACT SECTION -->
+    <section class="contact">
+
+        <h2>Get in touch!</h2>
+
+        <div class="contact__info">
+            <h4>Alessandro Spiridigliozzi</h4>
+            <p>my email</p>
+            <div class="social-icons">social icons</div>
+        </div>
+
+        <div class="contact__form">
+            <form>
+          
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..." required>
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter Email" name="email" required>
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+    <footer class="footer">
+
+        <h3 class="footer__quote">quote goes here...</h3>
+
+        <div class="footer__links">
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">My CV</a>
+            <a href="#">Contact Me</a>
+        </div>
+
+        <div class="footer__info">
+            <h4>Alessandro Spiridigliozzi</h4>
+            <p>my email</p>
+            <div class="social-icons">social icons</div>
+        </div>
+
+    </footer>
 </body>
 </html>
