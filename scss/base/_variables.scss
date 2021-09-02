@@ -1,0 +1,16 @@
+
+$primary-color: rgb(204, 204, 204);
+$secondary-color: rgb(26, 26, 26);
+$main-font: 'Montserrat', sans-serif;
+$main-font-regular: 400;
+$main-font-medium: 500;
+$main-font-bold: 700;
+$main-font-extra-bold: 800;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+    background-color: $secondary-color;
+} 
