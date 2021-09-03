@@ -1,21 +1,17 @@
 @use "../base/variables" as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+h1 {
+    font-weight: $main-font-extra-bold;
+    font-size: 3.5rem;
+}
 
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+h2 {
+    font-weight: $main-font-bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+a {
     color: $primary-color;
-    background-color: $secondary-color;
-    background-image: url("../assets/bg/broken_noise.png");
-
-    h1 {
-        font-weight: $main-font-extra-bold;
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-weight: $main-font-bold;
-        font-size: 2rem;
-    }
+    text-decoration: none;
 }

@@ -1,0 +1,24 @@
+@use "../base/variables" as *;
+
+.first-section {
+    border: 1px solid $primary-color;
+    height: 70vh;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading {
+        margin: 10px 0;
+    }
+
+    &__subheading {
+        margin: 10px 0;
+        font-weight: $main-font-regular;
+        line-height: 1.5rem;
+
+        &--bolder {
+            font-weight: $main-font-extra-bold;
+        }
+    }
+}

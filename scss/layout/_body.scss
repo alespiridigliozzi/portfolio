@@ -1,0 +1,30 @@
+@use "../base/variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+
+    ul {
+        list-style-type: none;
+    }
+} 
+
+html, body {
+    font-family: $main-font;
+    font-weight: $main-font-regular;
+    font-size: 16px;
+    color: $primary-color;
+    background-color: $secondary-color;
+    background-image: url("../assets/bg/broken_noise.png");
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 90vw;
+    margin: auto;
+    border: 1px solid red;
+}
