@@ -1,0 +1,8 @@
+@use "../base/variables" as *;
+
+.header {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}

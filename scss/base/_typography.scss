@@ -4,13 +4,18 @@
 
 html, body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: $primary-color;
-    background-image: url(bg.png);
-    background-repeat: repeat;
+    background-color: $secondary-color;
+    background-image: url("../assets/bg/broken_noise.png");
 
     h1 {
         font-weight: $main-font-extra-bold;
-        font-size: 5rem;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-weight: $main-font-bold;
+        font-size: 2rem;
     }
 }
