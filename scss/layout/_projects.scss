@@ -1,0 +1,55 @@
+@use "../base/variables" as *;
+
+.projects {
+    padding: 20px 0;
+}
+
+.projects-grid {
+    margin: 10vh 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    gap: 50px;
+
+    &__item {
+        background-color: rgb(17, 42, 75);
+        border: 1px dashed red;
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 70%;
+
+        &-description {
+            border: 1px solid greenyellow;
+            padding: 10px 0;
+        }
+
+        &-menu {
+            border: 1px solid palevioletred;
+            padding: 10px 0;
+        }
+
+        &-img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 40vh;
+            max-height: 40vh;
+
+            &--1 {
+                background-image: url(../assets/images/robot.jpg);
+            }
+
+            &--2 {
+                background-image: url(../assets/images/connect.jpg);
+            }
+
+            &--3 {
+                background-image: url(../assets/images/laptop.jpg);
+            }
+
+            &--4 {
+                background-image: url(../assets/images/tablet.jpg);
+            }
+        }
+    }
+}

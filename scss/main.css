@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +13,7 @@
 html, body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   color: #b8b8b8;
   background-color: #1a1a1a;
   background-image: url("../assets/bg/broken_noise.png");
@@ -27,13 +28,20 @@ html, body {
 
 h1 {
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 h2 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.5rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
 }
 
 a {
@@ -72,8 +80,8 @@ a {
 
 .first-section {
   border: 1px solid #b8b8b8;
-  height: 70vh;
-  text-align: right;
+  height: 90vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,10 +90,56 @@ a {
   margin: 10px 0;
 }
 .first-section__subheading {
-  margin: 10px 0;
+  margin: 30px;
   font-weight: 400;
   line-height: 1.5rem;
 }
 .first-section__subheading--bolder {
   font-weight: 800;
+}
+
+.projects {
+  padding: 20px 0;
+}
+
+.projects-grid {
+  margin: 10vh 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+  gap: 50px;
+}
+.projects-grid__item {
+  background-color: #112a4b;
+  border: 1px dashed red;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 70%;
+}
+.projects-grid__item-description {
+  border: 1px solid greenyellow;
+  padding: 10px 0;
+}
+.projects-grid__item-menu {
+  border: 1px solid palevioletred;
+  padding: 10px 0;
+}
+.projects-grid__item-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  max-height: 40vh;
+}
+.projects-grid__item-img--1 {
+  background-image: url(../assets/images/robot.jpg);
+}
+.projects-grid__item-img--2 {
+  background-image: url(../assets/images/connect.jpg);
+}
+.projects-grid__item-img--3 {
+  background-image: url(../assets/images/laptop.jpg);
+}
+.projects-grid__item-img--4 {
+  background-image: url(../assets/images/tablet.jpg);
 }

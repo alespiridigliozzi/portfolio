@@ -2,8 +2,8 @@
 
 .first-section {
     border: 1px solid $primary-color;
-    height: 70vh;
-    text-align: right;
+    height: 90vh;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     }
 
     &__subheading {
-        margin: 10px 0;
+        margin: 30px;
         font-weight: $main-font-regular;
         line-height: 1.5rem;
 

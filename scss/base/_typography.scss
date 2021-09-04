@@ -2,13 +2,20 @@
 
 h1 {
     font-weight: $main-font-extra-bold;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 h2 {
     font-weight: $main-font-bold;
     font-size: 2rem;
     line-height: 2.5rem;
+}
+
+h3 {
+    font-weight: $main-font-bold;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-transform: uppercase;
 }
 
 a {
