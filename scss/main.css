@@ -61,6 +61,9 @@ a, a:active, a:visited {
 .navbar__links {
   display: none;
 }
+.navbar__links li {
+  display: inline-block;
+}
 
 .header {
   height: 90vh;
@@ -299,7 +302,7 @@ a, a:active, a:visited {
 }
 
 .contact {
-  margin: 5vh 0;
+  margin: 20vh 0 10vh 0;
 }
 
 .contact-grid {
@@ -315,7 +318,7 @@ a, a:active, a:visited {
   margin: 0 5vw;
 }
 .contact-grid__form {
-  margin: 3vh 0;
+  margin: 5vh 0;
   display: grid;
   grid-template-columns: 1fr;
   width: 90%;
@@ -341,4 +344,31 @@ a, a:active, a:visited {
 .fas, .fab {
   color: #b8b8b8;
   font-size: 3rem;
+}
+
+.footer {
+  width: 90vw;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 20px;
+}
+.footer__quote {
+  opacity: 0.2;
+  padding: 40px;
+  text-align: center;
+  text-transform: none;
+}
+.footer__info {
+  padding: 40px 0;
+}
+.footer__info i {
+  margin: 0 10px;
+  font-size: 2rem;
+}
+.footer__links {
+  display: none;
+  text-align: right;
+  padding: 20px;
 }

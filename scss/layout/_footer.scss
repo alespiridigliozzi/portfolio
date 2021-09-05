@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+
+.footer {
+    width: 90vw;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+
+    &__quote {
+        opacity: 0.2;
+        padding: 40px;
+        text-align: center;
+        text-transform: none;
+    }
+
+    &__info {
+        padding: 40px 0;
+
+        i {
+            margin: 0 10px;
+            font-size: 2rem;
+        }
+    }
+
+    &__links {
+        display: none;
+        text-align: right;
+        padding: 20px;
+    }
+}

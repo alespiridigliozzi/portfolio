@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 .contact {
-    margin: 5.0vh 0;
+    margin: 20vh 0 10vh 0;
 }
 
 .contact-grid {
@@ -19,7 +19,7 @@
     }
 
     &__form {
-        margin: 3.0vh 0;
+        margin: 5.0vh 0;
         display: grid;
         grid-template-columns: 1fr;
         width: 90%;
