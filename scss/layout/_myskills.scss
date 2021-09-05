@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+
+.skills {
+    margin: 10vh 0;
+}
+
+.skills-grid {
+    margin: 5.0vh 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    gap: 40px;
+
+    &__item {
+
+        &-menu {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 50vw;
+            padding: 10px 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-bottom: 2px solid $primary-color;
+
+            h3 {
+                font-weight: 500;
+                font-size: 1rem;
+            }
+        }
+    }
+}

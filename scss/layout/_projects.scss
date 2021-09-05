@@ -1,39 +1,50 @@
 @use "../base/variables" as *;
 
 .projects {
-    padding: 20px 0;
+    margin: 25px 0;
 }
 
 .projects-grid {
-    margin: 10vh 0;
+    margin: 5.0vh auto;
+    width: 90%;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
     gap: 50px;
 
     &__item {
-        background-color: rgb(17, 42, 75);
-        border: 1px dashed red;
         display: grid;
         grid-template-columns: 1fr;
         min-height: 70%;
+        margin: 4.0vh 0;
 
         &-description {
-            border: 1px solid greenyellow;
-            padding: 10px 0;
+            border-bottom: 2px solid $primary-color;
+            padding: 20px 0;
         }
 
         &-menu {
-            border: 1px solid palevioletred;
-            padding: 10px 0;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-bottom: 2px solid $primary-color;
         }
 
         &-img {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            min-height: 40vh;
-            max-height: 40vh;
+            min-height: 50vh;
+            max-height: 60vh;
 
             &--1 {
                 background-image: url(../assets/images/robot.jpg);

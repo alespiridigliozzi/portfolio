@@ -1,7 +1,6 @@
 @use "../base/variables" as *;
 
 .first-section {
-    border: 1px solid $primary-color;
     height: 90vh;
     text-align: center;
     display: flex;
@@ -10,6 +9,8 @@
 
     &__heading {
         margin: 10px 0;
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
 
     &__subheading {
