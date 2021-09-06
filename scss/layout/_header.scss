@@ -8,6 +8,10 @@
     justify-content: center;
     position: relative;
 
+    @include laptop {
+        height: 40vh;
+    }
+
     &__title--breakline {       
         @include mobile {
                 display: none;
@@ -62,6 +66,10 @@
         position: absolute;
         bottom: 5.0vh;
         align-self: center;
+
+        @include laptop {
+                display: none;
+            }
     }
 
     .heartbeat {

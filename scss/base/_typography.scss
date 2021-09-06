@@ -12,6 +12,10 @@ h1 {
     @include tablet {
         font-size: 3.5rem;
     }
+
+    @include laptop {
+        font-size: 4rem;
+    }
 }
 
 h2 {
