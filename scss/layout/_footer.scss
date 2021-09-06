@@ -1,8 +1,8 @@
-@use "../base/variables" as *;
+@use "../abstracts/variables" as *;
 
 .footer {
     width: 90vw;
-    margin: 10vh auto;
+    margin: 5vh auto;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -10,7 +10,7 @@
 
     &__quote {
         opacity: 0.2;
-        padding: 40px;
+        padding: 0 20vw;
         text-align: center;
         text-transform: none;
     }
@@ -19,7 +19,7 @@
         padding: 40px 0;
 
         i {
-            margin: 0 10px;
+            margin: 0 5vw;
             font-size: 2rem;
         }
     }
