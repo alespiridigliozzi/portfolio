@@ -1,15 +1,23 @@
-@use "../base/variables" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .skills {
-    margin: 10vh 0;
+    margin: 25vh 0;
+
+    @include tablet {
+        margin: 15vh 0;
+    }
+
+    h2 {
+        margin-bottom: 10vh;
+    }
 }
 
 .skills-grid {
-    margin: 5.0vh 0;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 5vh;
 
     &__item {
 
@@ -17,19 +25,21 @@
             display: grid;
             grid-template-columns: 1fr;
             justify-items: center;
-            align-items: center;
         }
 
         &-link {
             display: flex;
-            justify-content: left;
-            align-items: center;
-            width: 50vw;
-            padding: 10px 0;
-            font-size: 1.1rem;
+            justify-content: flex-start;
+            width: 70vw;
+            margin-top: 5px;
+            font-size: 1rem;
             text-transform: uppercase;
             font-weight: 500;
             border-bottom: 2px solid $primary-color;
+
+            @include tablet {
+                width: 50vw;
+            }
 
             h3 {
                 font-weight: 500;

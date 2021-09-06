@@ -1,6 +1,9 @@
-@use "./base/variables";
-@use "./layout/body";
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+
 @use "./base/typography";
+
+@use "./layout/body";
 @use "./layout/navigation";
 @use "./layout/header";
 @use "./layout/first-section";

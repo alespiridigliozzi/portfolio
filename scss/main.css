@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap");
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+a, a:active, a:visited {
+  color: #b8b8b8;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,8 +46,8 @@
 html, body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.06rem;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
   color: #b8b8b8;
   background-color: #1a1a1a;
   background-image: url("../assets/bg/broken_noise.png");
@@ -24,30 +57,6 @@ html, body {
 .main-container {
   width: 90vw;
   margin: auto;
-}
-
-h1 {
-  font-weight: 800;
-  font-size: 3rem;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2rem;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  letter-spacing: 0.06rem;
-  text-transform: uppercase;
-}
-
-a, a:active, a:visited {
-  color: #b8b8b8;
-  text-decoration: none;
 }
 
 .navbar {
@@ -61,8 +70,15 @@ a, a:active, a:visited {
 .navbar__links {
   display: none;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .navbar__links li {
-  display: inline-block;
+  margin: 0 10px;
 }
 
 .header {
@@ -71,6 +87,11 @@ a, a:active, a:visited {
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+@media (max-width: 767px) {
+  .header__title--breakline {
+    display: none;
+  }
 }
 .header .focus-in-expand-fwd {
   -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -198,37 +219,64 @@ a, a:active, a:visited {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .first-section {
+    text-align: right;
+  }
+}
 .first-section__heading {
   margin: 10px 0;
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 2.5rem;
 }
 .first-section__subheading {
   margin: 30px;
   font-weight: 400;
+  font-size: 1rem;
   line-height: 1.5rem;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .first-section__subheading {
+    margin: 20px 0 0 20px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
 .first-section__subheading--bolder {
   font-weight: 800;
 }
 
-.projects {
-  margin: 25px 0;
+.projects h2 {
+  margin-bottom: 10vh;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projects h2 {
+    margin-bottom: 5vh;
+  }
 }
 
 .projects-grid {
-  margin: 5vh auto;
-  width: 90%;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
-  gap: 50px;
+  gap: 15vh;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+    row-gap: 10vh;
+  }
+}
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .projects-grid__item {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 70%;
-  margin: 4vh 0;
+  min-height: 50%;
 }
 .projects-grid__item-description {
   border-bottom: 2px solid #b8b8b8;
@@ -242,8 +290,7 @@ a, a:active, a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
-  font-size: 1.1rem;
+  padding: 10px 0;
   text-transform: uppercase;
   font-weight: 500;
   border-bottom: 2px solid #b8b8b8;
@@ -253,7 +300,13 @@ a, a:active, a:visited {
   background-size: cover;
   background-position: center;
   min-height: 50vh;
-  max-height: 60vh;
+  max-height: 50vh;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projects-grid__item-img {
+    min-height: 30vh;
+    max-height: 45vh;
+  }
 }
 .projects-grid__item-img--1 {
   background-image: url(../assets/images/robot.jpg);
@@ -269,60 +322,66 @@ a, a:active, a:visited {
 }
 
 .skills {
-  margin: 10vh 0;
+  margin: 25vh 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills {
+    margin: 15vh 0;
+  }
+}
+.skills h2 {
+  margin-bottom: 10vh;
 }
 
 .skills-grid {
-  margin: 5vh 0;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 5vh;
 }
 .skills-grid__item-menu {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  align-items: center;
 }
 .skills-grid__item-link {
   display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 50vw;
-  padding: 10px 0;
-  font-size: 1.1rem;
+  justify-content: flex-start;
+  width: 70vw;
+  margin-top: 5px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   border-bottom: 2px solid #b8b8b8;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills-grid__item-link {
+    width: 50vw;
+  }
 }
 .skills-grid__item-link h3 {
   font-weight: 500;
   font-size: 1rem;
 }
 
-.contact {
-  margin: 20vh 0 10vh 0;
+.contact h2 {
+  margin-bottom: 10vh;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin: 5vh 0;
 }
-.contact-grid__info {
-  margin: 3vh 0;
-}
-.contact-grid__info i {
+.contact-grid i {
   margin: 0 5vw;
 }
 .contact-grid__form {
-  margin: 5vh 0;
+  margin: 10vh 0;
   display: grid;
   grid-template-columns: 1fr;
   width: 90%;
-  row-gap: 20px;
+  row-gap: 5vh;
 }
 .contact-grid__form input, .contact-grid__form input:focus, .contact-grid__form input:active, .contact-grid__form textarea {
   outline: none;
@@ -348,7 +407,7 @@ a, a:active, a:visited {
 
 .footer {
   width: 90vw;
-  margin: 10vh auto;
+  margin: 5vh auto;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -356,7 +415,7 @@ a, a:active, a:visited {
 }
 .footer__quote {
   opacity: 0.2;
-  padding: 40px;
+  padding: 0 20vw;
   text-align: center;
   text-transform: none;
 }
@@ -364,7 +423,7 @@ a, a:active, a:visited {
   padding: 40px 0;
 }
 .footer__info i {
-  margin: 0 10px;
+  margin: 0 5vw;
   font-size: 2rem;
 }
 .footer__links {
