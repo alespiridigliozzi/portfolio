@@ -12,6 +12,12 @@
         text-align: right;
     }
 
+    @include laptop {
+        height: 40vh;
+        margin-bottom: 10vh;
+        text-align: right;
+    }
+
     &__heading {
         margin: 10px 0;
         font-size: 2rem;
@@ -28,6 +34,10 @@
             margin: 20px 0 0 20px;
             font-size: 1.2rem;
             line-height: 2rem;
+        }
+
+        @include laptop {
+            margin: 0;
         }
 
         &--bolder {

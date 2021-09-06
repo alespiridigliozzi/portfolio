@@ -24,9 +24,17 @@ html, body {
     background-color: $secondary-color;
     background-image: url("../assets/bg/broken_noise.png");
     overflow-x: hidden;
+
+    @include laptop {
+        font-size: 18px;
+    }
 }
 
 .main-container {
     width: 90vw;
     margin: auto;
+
+    @include laptop {
+        width: 80vw;
+    }
 }

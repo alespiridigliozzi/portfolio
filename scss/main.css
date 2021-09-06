@@ -14,6 +14,11 @@ h1 {
     font-size: 3.5rem;
   }
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 
 h2 {
   font-weight: 700;
@@ -53,10 +58,20 @@ html, body {
   background-image: url("../assets/bg/broken_noise.png");
   overflow-x: hidden;
 }
+@media (min-width: 1024px) {
+  html, body {
+    font-size: 18px;
+  }
+}
 
 .main-container {
   width: 90vw;
   margin: auto;
+}
+@media (min-width: 1024px) {
+  .main-container {
+    width: 80vw;
+  }
 }
 
 .navbar {
@@ -66,6 +81,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .navbar {
+    width: 80vw;
+  }
 }
 .navbar__links {
   display: none;
@@ -77,8 +97,20 @@ html, body {
     align-items: center;
   }
 }
+@media (min-width: 1024px) {
+  .navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .navbar__links li {
   margin: 0 10px;
+}
+@media (min-width: 1024px) {
+  .navbar__links li {
+    margin: 0 20px;
+  }
 }
 
 .header {
@@ -87,6 +119,11 @@ html, body {
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 40vh;
+  }
 }
 @media (max-width: 767px) {
   .header__title--breakline {
@@ -138,6 +175,11 @@ html, body {
   position: absolute;
   bottom: 5vh;
   align-self: center;
+}
+@media (min-width: 1024px) {
+  .header .fa-arrow-alt-circle-down {
+    display: none;
+  }
 }
 .header .heartbeat {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -224,6 +266,13 @@ html, body {
     text-align: right;
   }
 }
+@media (min-width: 1024px) {
+  .first-section {
+    height: 40vh;
+    margin-bottom: 10vh;
+    text-align: right;
+  }
+}
 .first-section__heading {
   margin: 10px 0;
   font-size: 2rem;
@@ -240,6 +289,11 @@ html, body {
     margin: 20px 0 0 20px;
     font-size: 1.2rem;
     line-height: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .first-section__subheading {
+    margin: 0;
   }
 }
 .first-section__subheading--bolder {
@@ -271,6 +325,7 @@ html, body {
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 10vh;
   }
 }
 .projects-grid__item {
@@ -308,6 +363,12 @@ html, body {
     max-height: 45vh;
   }
 }
+@media (min-width: 1024px) {
+  .projects-grid__item-img {
+    min-height: 30vh;
+    max-height: 40vh;
+  }
+}
 .projects-grid__item-img--1 {
   background-image: url(../assets/images/robot.jpg);
 }
@@ -329,6 +390,11 @@ html, body {
     margin: 15vh 0;
   }
 }
+@media (min-width: 1024px) {
+  .skills {
+    margin: 15vh 0;
+  }
+}
 .skills h2 {
   margin-bottom: 10vh;
 }
@@ -338,6 +404,11 @@ html, body {
   align-items: center;
   grid-template-columns: 1fr;
   gap: 5vh;
+}
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .skills-grid__item-menu {
   display: grid;
@@ -357,6 +428,11 @@ html, body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .skills-grid__item-link {
     width: 50vw;
+  }
+}
+@media (min-width: 1024px) {
+  .skills-grid__item-link {
+    width: 20vw;
   }
 }
 .skills-grid__item-link h3 {
@@ -382,6 +458,11 @@ html, body {
   grid-template-columns: 1fr;
   width: 90%;
   row-gap: 5vh;
+}
+@media (min-width: 1024px) {
+  .contact-grid__form {
+    width: 70%;
+  }
 }
 .contact-grid__form input, .contact-grid__form input:focus, .contact-grid__form input:active, .contact-grid__form textarea {
   outline: none;
@@ -413,6 +494,12 @@ html, body {
   justify-items: center;
   gap: 20px;
 }
+@media (min-width: 1024px) {
+  .footer {
+    width: 80vw;
+    gap: 5vh;
+  }
+}
 .footer__quote {
   opacity: 0.2;
   padding: 0 20vw;
@@ -425,6 +512,11 @@ html, body {
 .footer__info i {
   margin: 0 5vw;
   font-size: 2rem;
+}
+@media (min-width: 1024px) {
+  .footer__info i {
+    font-size: 3rem;
+  }
 }
 .footer__links {
   display: none;
