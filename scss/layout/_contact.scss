@@ -21,8 +21,11 @@
         width: 90%;
         row-gap: 5vh;
 
-        @include laptop {
+        @include tablet {
             width: 70%;
+        }
+        @include laptop {
+            width: 60%;
         }
 
         input, input:focus, input:active, textarea {
@@ -41,6 +44,10 @@
             width: 60%;
             justify-self: center;
             border: 1px solid $primary-color;
+
+            @include laptop {
+                width: 40%;
+            }
         }
     }
 }
