@@ -9,7 +9,7 @@
 }
 
 @mixin tablet {
-    @media (min-width: $breakpoint-tablet) and (max-width: 1023px) { @content; }
+    @media (min-width: $breakpoint-tablet) and (max-width: 1200px){ @content; }
 }
 
 @mixin laptop {

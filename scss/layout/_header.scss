@@ -8,8 +8,10 @@
     justify-content: center;
     position: relative;
 
-    @include laptop {
-        height: 40vh;
+    h1 {
+        @include laptop {
+                margin-top: 30vh;
+        }
     }
 
     &__title--breakline {       
@@ -19,8 +21,8 @@
     }
 
     .focus-in-expand-fwd {
-	    -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	    animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    -webkit-animation: focus-in-expand-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: focus-in-expand-fwd 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
         @-webkit-keyframes focus-in-expand-fwd {
             0% {
@@ -66,10 +68,6 @@
         position: absolute;
         bottom: 5.0vh;
         align-self: center;
-
-        @include laptop {
-                display: none;
-            }
     }
 
     .heartbeat {

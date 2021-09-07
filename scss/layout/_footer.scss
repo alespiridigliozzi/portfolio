@@ -10,8 +10,10 @@
     gap: 20px;
 
     @include laptop {
+        margin: 20vh auto 10vh;
         width: 80vw;
-        gap: 5vh;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
 
     &__quote {
@@ -19,17 +21,29 @@
         padding: 0 20vw;
         text-align: center;
         text-transform: none;
+
+        @include laptop {
+            padding: 0;
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
     }
 
     &__info {
         padding: 40px 0;
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+        }
 
         i {
             margin: 0 5vw;
             font-size: 2rem;
 
             @include laptop {
-                font-size: 3rem;
+                margin: 0 20px;
             }
         }
     }
@@ -38,5 +52,11 @@
         display: none;
         text-align: right;
         padding: 20px;
+
+        @include laptop {
+            display: inline-block;
+            text-align: left;
+            line-height: 2rem;
+        }
     }
 }
