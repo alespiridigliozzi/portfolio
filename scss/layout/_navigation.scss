@@ -5,9 +5,7 @@
     height: 10vh;
     width: 90vw;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include navbar-Flex;
 
     @include laptop {
         width: 80vw;
@@ -17,15 +15,11 @@
         display: none;
 
         @include tablet {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include navbar-Flex;
         }
 
         @include laptop {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include navbar-Flex;
         }
 
         li {
