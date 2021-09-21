@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 h1 {
   font-weight: 800;
   font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 320px) {
   h1 {
@@ -21,20 +22,20 @@ h1 {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: "Montserrat", sans-serif;
   font-size: 1.1rem;
   line-height: 2rem;
-  text-transform: uppercase;
 }
 
 a, a:active, a:visited {
-  color: #b8b8b8;
+  color: rgba(175, 174, 174, 0.863);
   text-decoration: none;
 }
 
@@ -42,20 +43,19 @@ a, a:active, a:visited {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
 }
 * ul {
   list-style-type: none;
 }
 
 html, body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.05rem;
-  color: #b8b8b8;
+  color: rgba(175, 174, 174, 0.863);
   background-color: #1a1a1a;
-  background-image: url("../assets/bg/broken_noise.png");
+  background-image: url("../assets/bg/Background.png");
   overflow-x: hidden;
 }
 @media (min-width: 1224px) {
@@ -170,7 +170,7 @@ html, body {
 }
 .header .fa-arrow-alt-circle-down {
   opacity: 0.3;
-  color: #b8b8b8;
+  color: rgba(175, 174, 174, 0.863);
   font-size: 2rem;
   position: absolute;
   bottom: 5vh;
@@ -290,6 +290,7 @@ html, body {
   }
 }
 .first-section__subheading--bolder {
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
@@ -327,7 +328,7 @@ html, body {
   min-height: 50%;
 }
 .projects-grid__item-description {
-  border-bottom: 2px solid #b8b8b8;
+  border-bottom: 2px solid rgba(175, 174, 174, 0.863);
   padding: 20px 0;
 }
 .projects-grid__item-menu {
@@ -341,7 +342,7 @@ html, body {
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: 500;
-  border-bottom: 2px solid #b8b8b8;
+  border-bottom: 2px solid rgba(175, 174, 174, 0.863);
 }
 .projects-grid__item-img {
   background-repeat: no-repeat;
@@ -349,18 +350,6 @@ html, body {
   background-position: center;
   min-height: 50vh;
   max-height: 50vh;
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  .projects-grid__item-img {
-    min-height: 30vh;
-    max-height: 45vh;
-  }
-}
-@media (min-width: 1224px) {
-  .projects-grid__item-img {
-    min-height: 45vh;
-    max-height: 45vh;
-  }
 }
 .projects-grid__item-img--1 {
   background-image: url(../assets/images/robot.jpg);
@@ -416,7 +405,7 @@ html, body {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
-  border-bottom: 2px solid #b8b8b8;
+  border-bottom: 2px solid rgba(175, 174, 174, 0.863);
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .skills-grid__item-link {
@@ -467,8 +456,8 @@ html, body {
   padding: 20px 0;
   background: none;
   border: none;
-  border-bottom: 2px solid #b8b8b8;
-  color: #b8b8b8;
+  border-bottom: 2px solid rgba(175, 174, 174, 0.863);
+  color: rgba(175, 174, 174, 0.863);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -476,7 +465,7 @@ html, body {
   margin-top: 3vh;
   width: 60%;
   justify-self: center;
-  border: 1px solid #b8b8b8;
+  border: 1px solid rgba(175, 174, 174, 0.863);
 }
 @media (min-width: 1224px) {
   .contact-grid__form input[type=submit] {
@@ -485,7 +474,7 @@ html, body {
 }
 
 .fas, .fab {
-  color: #b8b8b8;
+  color: rgba(175, 174, 174, 0.863);
   font-size: 3rem;
 }
 

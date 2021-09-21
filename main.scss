@@ -1,0 +1,13 @@
+@use "./scss/abstracts/variables";
+@use "./scss/abstracts/mixins";
+
+@use "./scss/base/typography";
+
+@use "./scss/layout/body";
+@use "./scss/layout/navigation";
+@use "./scss/layout/header";
+@use "./scss/layout/first-section";
+@use "./scss/layout/projects";
+@use "./scss/layout/myskills";
+@use "./scss/layout/contact";
+@use "./scss/layout/footer";

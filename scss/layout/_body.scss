@@ -1,14 +1,10 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: $main-font;
 
     ul {
         list-style-type: none;
@@ -22,7 +18,7 @@ html, body {
     letter-spacing: 0.05rem;
     color: $primary-color;
     background-color: $secondary-color;
-    background-image: url("../assets/bg/broken_noise.png");
+    background-image: url("../assets/bg/Background.png");
     overflow-x: hidden;
 
     @include laptop {
