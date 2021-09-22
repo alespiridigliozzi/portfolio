@@ -37,15 +37,6 @@
             grid-template-columns: repeat(4, 1fr);
             justify-items: center;
         }
-
-        i {
-            margin: 0 5vw;
-            font-size: 2rem;
-
-            @include laptop {
-                margin: 0 20px;
-            }
-        }
     }
 
     &__links {

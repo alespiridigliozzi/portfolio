@@ -3,6 +3,9 @@
 
 @use "./scss/base/typography";
 
+@use "./scss/components/buttons";
+@use "./scss/components/icons";
+
 @use "./scss/layout/body";
 @use "./scss/layout/navigation";
 @use "./scss/layout/header";
