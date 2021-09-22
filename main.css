@@ -41,7 +41,7 @@ h4 {
 a, a:active, a:visited {
   color: #afaeae;
   text-decoration: none;
-  transition: 0.3s all ease-in;
+  transition: 0.2s all ease-in;
 }
 
 a:hover {
@@ -720,6 +720,7 @@ html, body {
   padding: 0 20vw;
   text-align: center;
   text-transform: none;
+  font-style: italic;
 }
 @media (min-width: 1201px) {
   .footer__quote {
@@ -775,5 +776,13 @@ html, body {
 }
 
 .aboutme {
-  margin-top: 25vh;
+  margin: 20vh 0;
+}
+@media (min-width: 1201px) {
+  .aboutme {
+    margin: 30vh 25vh 25vh 25vh;
+  }
+}
+.aboutme a {
+  text-decoration: underline;
 }

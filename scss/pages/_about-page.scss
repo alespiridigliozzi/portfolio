@@ -2,5 +2,13 @@
 @use "../abstracts/mixins" as *;
 
 .aboutme {
-    margin-top: 25vh;
+    margin: 20vh 0;
+
+    @include laptop {
+        margin: 30vh 25vh 25vh 25vh;
+    }
+
+    a {
+        text-decoration: underline;
+    }
 }
