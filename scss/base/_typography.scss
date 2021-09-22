@@ -30,12 +30,21 @@ h2 {
 }
 
 h3 {
-    font-weight: $secondary-font;
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-family: $secondary-font;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
 }
 
 a, a:active, a:visited {
     color: $primary-color;
     text-decoration: none;
+    transition: 0.3s all ease-in;
+}
+
+a:hover {
+    color: $accent-color;
 }

@@ -3,10 +3,6 @@
 
 .projects h2 {
     margin-bottom: 10vh;
-
-    @include tablet {
-        margin-bottom: 5vh;
-    }
 }
 
 .projects-grid {
@@ -30,10 +26,15 @@
         display: grid;
         grid-template-columns: 1fr;
         min-height: 50%;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         &-description {
             border-bottom: 2px solid $primary-color;
-            padding: 20px 0;
+            padding: 20px 0 10px;
         }
 
         &-menu {
@@ -69,11 +70,15 @@
             // }
 
             &--1 {
-                background-image: url(../assets/images/robot.jpg);
+                background-color: black;
+                background-image: url(/assets/images/js-calculator.png);
+                opacity: 0.7;
             }
 
             &--2 {
-                background-image: url(../assets/images/connect.jpg);
+                background-color: black;
+                background-image: url(/assets/images/morsecodepreview.png);
+                opacity: 0.7;
             }
 
             &--3 {

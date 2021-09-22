@@ -29,14 +29,23 @@ h2 {
 }
 
 h3 {
-  font-weight: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 a, a:active, a:visited {
   color: #afaeae;
   text-decoration: none;
+  transition: 0.3s all ease-in;
+}
+
+a:hover {
+  color: #e7e6e6;
 }
 
 * {
@@ -57,6 +66,7 @@ html, body {
   background-color: #1a1a1a;
   background-image: url("../assets/bg/Background.png");
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 @media (min-width: 1201px) {
   html, body {
@@ -217,7 +227,7 @@ html, body {
 }
 @media (min-width: 1201px) {
   .header h1 {
-    margin-top: 30vh;
+    margin-top: 50vh;
   }
 }
 @media (max-width: 767px) {
@@ -263,13 +273,15 @@ html, body {
     opacity: 1;
   }
 }
-.header .fa-arrow-alt-circle-down {
+.header a {
+  position: absolute;
+  bottom: 3vh;
+  align-self: center;
+}
+.header a .fa-angle-down {
   opacity: 0.3;
   color: #afaeae;
   font-size: 2rem;
-  position: absolute;
-  bottom: 5vh;
-  align-self: center;
 }
 .header .heartbeat {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -392,11 +404,6 @@ html, body {
 .projects h2 {
   margin-bottom: 10vh;
 }
-@media (min-width: 768px) {
-  .projects h2 {
-    margin-bottom: 5vh;
-  }
-}
 
 .projects-grid {
   display: grid;
@@ -421,10 +428,14 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.projects-grid__item:hover {
+  transform: scale(1.1);
 }
 .projects-grid__item-description {
   border-bottom: 2px solid #afaeae;
-  padding: 20px 0;
+  padding: 20px 0 10px;
 }
 .projects-grid__item-menu {
   display: grid;
@@ -447,10 +458,14 @@ html, body {
   max-height: 50vh;
 }
 .projects-grid__item-img--1 {
-  background-image: url(../assets/images/robot.jpg);
+  background-color: black;
+  background-image: url(/assets/images/js-calculator.png);
+  opacity: 0.7;
 }
 .projects-grid__item-img--2 {
-  background-image: url(../assets/images/connect.jpg);
+  background-color: black;
+  background-image: url(/assets/images/morsecodepreview.png);
+  opacity: 0.7;
 }
 .projects-grid__item-img--3 {
   background-image: url(../assets/images/laptop.jpg);
@@ -473,7 +488,7 @@ html, body {
   }
 }
 .skills h2 {
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 .skills-grid {
@@ -518,7 +533,7 @@ html, body {
 }
 
 .contact h2 {
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 .contact-grid {

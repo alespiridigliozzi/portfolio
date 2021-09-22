@@ -10,7 +10,7 @@
 
     h1 {
         @include laptop {
-                margin-top: 30vh;
+                margin-top: 50vh;
         }
     }
 
@@ -61,13 +61,16 @@
           
     }
 
-    .fa-arrow-alt-circle-down {
-        opacity: 0.3;
-        color: $primary-color;
-        font-size: 2rem;
+    a {
         position: absolute;
-        bottom: 5.0vh;
+        bottom: 3.0vh;
         align-self: center;
+
+        .fa-angle-down {
+                opacity: 0.3;
+                color: $primary-color;
+                font-size: 2rem;
+            }
     }
 
     .heartbeat {

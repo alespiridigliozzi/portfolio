@@ -20,6 +20,7 @@ html, body {
     background-color: $secondary-color;
     background-image: url("../assets/bg/Background.png");
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
     @include laptop {
         font-size: 18px;
