@@ -29,11 +29,13 @@
     color: $primary-color;
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
     margin: 2rem 0;
     border: 1px solid $primary-color;
     padding: 1.5rem;
     transition: .3s all ease-in-out;
     cursor: pointer;
+
 
     &:hover {
         background-color: $primary-color;

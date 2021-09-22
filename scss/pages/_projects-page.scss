@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.projects-page {
+    margin-top: 25vh;
+
+    h2 {
+        margin: 10vh 0;
+    }
+}
+
+.projects-p {
+    justify-self: center;
+    grid-column: 1 / -1;
+    margin: 10vh 0;
+
+    a {
+        text-decoration: underline;
+    }
+}
