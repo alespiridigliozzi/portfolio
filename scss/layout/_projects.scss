@@ -5,6 +5,10 @@
     margin-bottom: 10vh;
 }
 
+.projects__tags {
+    margin: 0.6rem 0 0.4rem;
+}
+
 .projects-grid {
     display: grid;
     align-items: center;
@@ -19,18 +23,24 @@
 
     @include laptop {
         grid-template-columns: 1fr 1fr;
-        gap: 10vh;
+        column-gap: 15vh;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.2rem 0;
+
+        @include laptop {
+            justify-content: space-evenly;
+            margin: 1.2rem 0;
+        }
     }
 
     &__item {
         display: grid;
         grid-template-columns: 1fr;
         min-height: 50%;
-        transition: all .3s ease-in-out;
-
-        &:hover {
-            transform: scale(1.1);
-        }
 
         &-description {
             border-bottom: 2px solid $primary-color;
@@ -58,16 +68,6 @@
             background-position: center;
             min-height: 50vh;
             max-height: 50vh;
-
-            // @include tablet {
-            //     min-height: 30vh;
-            //     max-height: 45vh;
-            // }
-
-            // @include laptop {
-            //     min-height: 50vh;
-            //     max-height: 50vh;
-            // }
 
             &--1 {
                 background-color: black;

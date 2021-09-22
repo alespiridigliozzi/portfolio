@@ -22,5 +22,35 @@
     align-items: center;
 }
 
+@mixin button-style {
+    font-family: $main-font;
+    padding: .5rem 0;
+    background: none;
+    color: $primary-color;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    border: 1px solid $primary-color;
+    padding: 1.5rem;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+    }
+}
+
+@mixin label-tag {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    margin: 0 7px 0 0;
+    text-transform: lowercase;
+}
+
 
 

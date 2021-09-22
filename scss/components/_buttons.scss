@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.main-button {
+    @include button-style;
+
+    @include tablet {
+        margin: 2rem 0;
+    }
+
+    @include laptop {
+        margin: 1rem 0;
+    }
+
+    &--projects {
+        @include button-style;
+        justify-self: center;
+        grid-column: 1 / -1;
+
+        @include laptop {
+            width: 30%;
+        }
+    }
+}
+
+.label-tag {
+    @include label-tag;
+}

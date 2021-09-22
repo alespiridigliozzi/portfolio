@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.projects-grid__links {
+    i {
+        font-size: 0.8rem;
+    }
+}
+
+.contact-grid__info {
+    i {
+        color: $primary-color;
+        font-size: 3rem;
+    }
+}
+
+.footer__info {
+    i {
+        margin: 0 5vw;
+        font-size: 2rem;
+
+        @include laptop {
+            margin: 0 20px;
+        }
+    }
+}
