@@ -18,3 +18,9 @@
 @use "./scss/pages/projects-page";
 @use "./scss/pages/contact-page";
 @use "./scss/pages/about-page";
+
+main {
+    width: 75%;
+    margin: 20vh auto;
+    text-align: center;
+}
