@@ -783,3 +783,9 @@ html, body {
 .aboutme a {
   text-decoration: underline;
 }
+
+main {
+  width: 75%;
+  margin: 20vh auto;
+  text-align: center;
+}
